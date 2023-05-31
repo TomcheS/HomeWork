@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+
+body {
+  background-color:#ff0000;
+  color:white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+table#t01 {
+  margin: 30px auto;
+  width: 70%;
+  background: white;
+  text-align: center;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #AB7C7C;
+}
+
+table#t01 tr:nth-child(odd) {
+ background-color: #8A8080;
+}
+
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width:620px) {
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe  {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+} 
+
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.header-title {
+
+}
+
+.header-panel {
+  background-color: #000000c7;
+  padding:10px;
+  text-align:center;
+  color: white;
+} 
+
+.main-menu {
+  margin: 0px auto 0px auto;
+  width: 56%;
+  background: #080808;
+  text-align: center;
+  padding: 10px;
+  z-index: 999;
+}
+
+.main-menu li {
+  padding: 14px;
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+.main-menu li:last-of-type {
+  border: none;
+}
+
+.main-menu li a {
+  color: white;
+  font-size: 21px;  
+  font-family: fantasy;
+  text-decoration: none;
+}
+
+
+.main-menu li a:hover {
+  color: red;
+}
+
+.cover-div {
+  width: 100%;
+  top: 0px;
+}
+
+.cover-div a img {
+  width: 100%;
+}
+
+.header-wrapper {
+  background: black;
+  height: 681px;
+  z-index: -20;
+} 
+
+.menu-wrapper {
+  background: black;
+  width: 100%;
+}
+
+.content-section {
+  width: 70%;
+  margin: 0px auto;
+}
+
+.titles {
+  font-size: 40px;
+  margin: 20px;
+  border: 3px solid white;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.list {
+  display: table;
+  margin: 0 auto;
+}
+
+.list li {
+  font-size: 28px;
+}
+
+.more-awards a {
+  color: white;
+}
+
+.biography-div {
+  text-align: justify;
+  font-size: 20px;
+  padding: 0px 70px;
+}
+
+.footer-div {
+  background-color: #000000;
+  padding:10px;
+  margin-top:7px;
+  font-size:12px;
+  position: relative;
+  height: 59px;
+}
+
+.footer-div div {
+  text-align: right;
+  width: 50%;
+  height: 30px;
+  float: left;
+}
+
+.schedule-table {
+    border: 3px solid;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.form-wrapper {
+  width: 80%;
+  margin: 0px auto;
+  font-size: 16px;
+}
+
+.form-table {
+  width: 70%;
+  margin:0px auto;
+  border: none;
+  border-collapse: unset;
+  border: 3px solid;
+}
+
+.form-table tr td a {
+  text-decoration: none;
+  color:white;
+  font-size:20px;
+}

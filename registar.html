@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Registar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header-panel">
+			<h1 class="header-title">Wayne Rooney</h1>
+		</div>
+		<div class="menu-wrapper">
+			<ul class="main-menu">
+				<li><a target='_blank' href="#">Schedule</a></li>
+			</ul>
+		</div>
+		<section class="content-section">
+			<table class="schedule-table">
+				<tr>
+					<th>Time</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+				</tr>
+				<tr>
+					<td>08:00-09:00</td>
+					<td></td> <!-- Ponedelnik -->
+					<td></td> <!-- Vtornik -->
+					<td></td> <!-- Sreda-->
+					<td></td> <!--Cetvrtok-->
+					<td></td> <!--Petok-->
+				</tr>
+				<tr>
+					<td>09:00-10:00</td>
+					<td></td> <!-- Ponedelnik -->
+					<td></td> <!-- Vtornik -->
+					<td></td> <!-- Sreda-->
+					<td></td> <!-- Cetvrtok -->
+					<td></td> <!-- Petok -->
+				</tr>
+				<tr>
+					<td>10:00-11:00</td>
+					<td></td> <!-- Ponedelnik -->
+					<td rowspan="3">Object-Oriented Programming</td> <!-- Vtornik -->
+					<td></td> <!-- Sreda-->
+					<td rowspan="3">Italian Language I</td> <!--Cetvrtok-->
+					<td rowspan="3">Internet Technologies</td> <!--Petok-->
+				</tr>
+				<tr>
+					<td>11:00-12:00</td>
+					<td></td> <!-- Ponedelnik -->
+					<td></td> <!-- Sreda-->
+				</tr>
+				<tr>
+					<td>12:00-13:00</td>
+					<td></td> <!-- Ponedelnik -->
+					<td rowspan="4">Calculus</td> <!-- Sreda-->
+				</tr>
+				<tr>
+					<td>13:00-14:00</td>
+					<td rowspan="3">Albanian Language</td> <!-- Ponedelnik -->
+					<td></td> <!-- Vtornik -->
+					<td></td> <!-- Sreda -->
+					<td></td> <!--Petok-->
+				</tr>
+				<tr>
+					<td>14:00-15:00</td>
+					<td rowspan="2">English Level 3</td> <!--Vtornik-->
+					<td rowspan="2">English Level 3</td> <!--Cetvrtok-->
+					<td></td> <!--Petok-->	
+				</tr>
+				<tr>
+					<td>15:00-16:00</td>
+					<td></td> <!-- Ponedelnik -->
+				</tr>
+			</table>
+			<br/>
+			<div class="form-wrapper">
+				<h2 class="titles"><b>Enter your informations:</b></h2>
+				<form>
+					<table class="form-table">
+						<tr>
+							<td><label for="name">Name:</label></td>
+							<td><input type="text" id="name" name="name"></td>
+						</tr>
+						<tr>
+							<td><label for="surname">Surname:</label></td>
+							<td><input type="text" id="surname" name="surname"></td>
+						</tr>
+						<tr>
+							<td><label for="age">Age:</label></td>
+							<td><input type="text" id="age" name="age"></td>
+						</tr>
+						<tr>
+							<td><label for="email">Username(e-mail)</label></td>
+							<td><input id="email" type="email" name="email" required /></td>
+						</tr>
+						<tr>
+							<td><label for="password">Password:</label></td>
+							<td><input type="password" id="password" name="password"/></td>
+						</tr>
+						<tr>
+							<td><label for="sex">Sex</label></td>
+							<td>
+								<select id="sex">
+									<option value="m">Male</option>
+									<option value="f">Female</option>
+									<option value="o">Other</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Relationship status</label></td>
+							<td>
+								<input type="radio" name="relationhsip" value="in-relationship"> Relationship<br>
+								<input type="radio" name="Relationship" value="single"> Single<br>
+								<input type="radio" name="other" value="other"> Other<br>
+							</td>
+						</tr>
+						<tr>
+							<td><label> Your direction:</label></td>
+							<td>
+								<input type="radio" name="info"  /> Computer Since <br/>
+					            <input type="radio" name="info"  /> Computer Engineering<br/>
+					            <input type="radio" name="info"  /> Bussiness Informatics <br/>
+					            <input type="radio" name="info"  /> Information Systems and Managment<br/>
+					        </td>
+						</tr>
+						<tr>
+							<td><label> Favorite football club </label></td>
+							<td>
+								<input type="checkbox" name="manchester" value="manchester"> Manchester<br>
+								<input type="checkbox" name="everton" value="everton"> Everton<br>
+							 	<input type="checkbox" name="realmadrid" value="realmadrid"> Real Madrid<br>
+							 	<input type="checkbox" name="barcelona" value="barcelona"> Barcelona<br>
+								<input type="checkbox" name="bayernmunich" value="bayernmunich"> Bayern Munich<br>
+								<input type="checkbox" name="juventus" value="juventus"> Juventus<br>
+								<input type="checkbox" name="other" value="other"> Other<br>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Confirm the following information:</label></td>
+							<td>
+								<input type="checkbox" name="age" value="age"><b> I confirm that i am 18+ years old.</b><br>
+								<input type="checkbox" name="confirm" value="confirm"><b> I confirm that i am a student at South East</b> <br/>
+								<input type="checkbox" name="robot" value="robot"><b> I'm not Robot.</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="index.html"> -- Go back --</a>
+							</td>
+							<td>
+								<button type="submit">Submit</button><br>
+							</td>
+						</tr>
+					 </table>
+
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-div">
+				<div> All rights &copy; reserved </div>
+				<div> 
+					Create by: Tomislav Spirevski<br/>
+					ID:128511<br/>
+					E-mail:<a href="mailto:ts28512@seeu.edu.mk">ts28511</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
